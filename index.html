@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NovaMart | Modern E-Commerce</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav">
+      <div class="logo">NovaMart</div>
+      <ul class="nav-links">
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#products">Best Sellers</a></li>
+        <li><a href="#collection">Collections</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="ghost-button">Sign In</button>
+        <button class="cart-button">
+          Cart <span id="cart-count">0</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">New Season Drop</p>
+        <h1>Everything you love about shopping, curated for modern living.</h1>
+        <p class="hero-subtitle">
+          Discover premium essentials, eco-conscious brands, and limited-edition collections in one seamless experience.
+        </p>
+        <div class="hero-actions">
+          <button class="primary-button">Shop the drop</button>
+          <button class="secondary-button">Explore brands</button>
+        </div>
+        <div class="hero-metrics">
+          <div>
+            <h3>4.9/5</h3>
+            <p>Average customer rating</p>
+          </div>
+          <div>
+            <h3>2,500+</h3>
+            <p>Curated products</p>
+          </div>
+          <div>
+            <h3>48h</h3>
+            <p>Delivery in major cities</p>
+          </div>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-top">
+          <span>Featured Capsule</span>
+          <span class="tag">Limited</span>
+        </div>
+        <h2>Studio Essentials</h2>
+        <p>Soft textures, muted palettes, and minimalist fits to elevate your everyday wardrobe.</p>
+        <div class="hero-card-stats">
+          <div>
+            <strong>32</strong>
+            <span>Pieces</span>
+          </div>
+          <div>
+            <strong>18</strong>
+            <span>Brands</span>
+          </div>
+          <div>
+            <strong>6</strong>
+            <span>Colorways</span>
+          </div>
+        </div>
+        <button class="primary-button full-width">Browse capsule</button>
+      </div>
+    </section>
+
+    <section class="categories" id="categories">
+      <div class="section-header">
+        <h2>Shop by category</h2>
+        <p>Navigate the essentials with our thoughtfully organized collections.</p>
+      </div>
+      <div class="category-grid">
+        <article>
+          <h3>Apparel</h3>
+          <p>Statement pieces, lounge staples, and performance fits.</p>
+          <a href="#products">Explore apparel →</a>
+        </article>
+        <article>
+          <h3>Home</h3>
+          <p>Design-forward décor, textiles, and lighting.</p>
+          <a href="#products">Explore home →</a>
+        </article>
+        <article>
+          <h3>Beauty</h3>
+          <p>Clean formulations and wellness-first routines.</p>
+          <a href="#products">Explore beauty →</a>
+        </article>
+        <article>
+          <h3>Tech</h3>
+          <p>Devices and accessories that keep you in flow.</p>
+          <a href="#products">Explore tech →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+      <div class="section-header">
+        <div>
+          <h2>Best sellers</h2>
+          <p>Curated picks based on community ratings and trending drops.</p>
+        </div>
+        <div class="product-filters">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="apparel">Apparel</button>
+          <button class="filter" data-filter="home">Home</button>
+          <button class="filter" data-filter="beauty">Beauty</button>
+          <button class="filter" data-filter="tech">Tech</button>
+        </div>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="apparel">
+          <div class="product-image gradient-one">Lounge Set</div>
+          <div class="product-info">
+            <h3>CloudSoft Lounge Set</h3>
+            <p>Ultra-soft knitwear in muted oat.</p>
+            <div class="product-meta">
+              <span>$128</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="home">
+          <div class="product-image gradient-two">Ceramic Set</div>
+          <div class="product-info">
+            <h3>Stoneware Dinner Set</h3>
+            <p>Hand-glazed textures for everyday dining.</p>
+            <div class="product-meta">
+              <span>$96</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="beauty">
+          <div class="product-image gradient-three">Serum</div>
+          <div class="product-info">
+            <h3>Radiant C+ Serum</h3>
+            <p>Brightening formula with vitamin C complex.</p>
+            <div class="product-meta">
+              <span>$54</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="tech">
+          <div class="product-image gradient-four">Headphones</div>
+          <div class="product-info">
+            <h3>Aero Noise-Canceling</h3>
+            <p>Immersive sound with adaptive focus mode.</p>
+            <div class="product-meta">
+              <span>$199</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="apparel">
+          <div class="product-image gradient-five">Sneakers</div>
+          <div class="product-info">
+            <h3>Orbit Runner</h3>
+            <p>Lightweight performance sneakers in mist.</p>
+            <div class="product-meta">
+              <span>$142</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+        <article class="product-card" data-category="home">
+          <div class="product-image gradient-six">Lamp</div>
+          <div class="product-info">
+            <h3>Halo Sculptural Lamp</h3>
+            <p>Soft-glow LED with tactile dimmer.</p>
+            <div class="product-meta">
+              <span>$118</span>
+              <button class="add-to-cart">Add</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="collection" id="collection">
+      <div>
+        <h2>Curated for city life</h2>
+        <p>
+          From commute-ready fits to unwind rituals, we build collections that flow with your day.
+          Save your favorites and enjoy concierge-style recommendations.
+        </p>
+        <ul class="collection-list">
+          <li>Weekly capsule drops with limited stock alerts.</li>
+          <li>Member-only perks including early access and free returns.</li>
+          <li>Style boards generated from your saved items.</li>
+        </ul>
+        <button class="primary-button">Join NovaMart+</button>
+      </div>
+      <div class="collection-cards">
+        <article>
+          <h3>Street Studio</h3>
+          <p>Layers, neutrals, and premium textures.</p>
+          <span>14 items</span>
+        </article>
+        <article>
+          <h3>Calm Home</h3>
+          <p>Organic textures for restful spaces.</p>
+          <span>21 items</span>
+        </article>
+        <article>
+          <h3>Glow Edit</h3>
+          <p>Wellness-led essentials for daily rituals.</p>
+          <span>10 items</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="reviews" id="reviews">
+      <div class="section-header">
+        <h2>Loved by the community</h2>
+        <p>Thousands of shoppers trust NovaMart for high-quality, design-forward essentials.</p>
+      </div>
+      <div class="review-grid">
+        <article>
+          <div class="review-header">
+            <span>★★★★★</span>
+            <strong>Selina M.</strong>
+          </div>
+          <p>Every order feels like a personal concierge experience. The delivery is fast and the curation is top-tier.</p>
+        </article>
+        <article>
+          <div class="review-header">
+            <span>★★★★★</span>
+            <strong>James L.</strong>
+          </div>
+          <p>The filters make it effortless to find what I need. The product quality never misses.</p>
+        </article>
+        <article>
+          <div class="review-header">
+            <span>★★★★★</span>
+            <strong>Priya K.</strong>
+          </div>
+          <p>The home collection transformed my apartment. Every piece feels intentional.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <div>
+        <h2>Get the latest drops</h2>
+        <p>Subscribe for early access, curated edits, and member-only offers.</p>
+      </div>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Enter your email" required />
+        <button type="submit" class="primary-button">Notify me</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <h3>NovaMart</h3>
+      <p>Modern essentials, delivered with intention.</p>
+    </div>
+    <div>
+      <h4>Customer Care</h4>
+      <ul>
+        <li>Shipping & Returns</li>
+        <li>Order Tracking</li>
+        <li>FAQs</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Company</h4>
+      <ul>
+        <li>About</li>
+        <li>Careers</li>
+        <li>Press</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li>Instagram</li>
+        <li>LinkedIn</li>
+        <li>Newsletter</li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
